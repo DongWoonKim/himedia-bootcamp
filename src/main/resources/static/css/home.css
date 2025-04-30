@@ -86,7 +86,7 @@
 }
 
 .text-right {
-    transform: translateX(52px);  /* 오른쪽으로 살짝 이동 */
+    transform: translateX(26px);  /* 오른쪽으로 살짝 이동 */
 }
 
 .cta-btn {
