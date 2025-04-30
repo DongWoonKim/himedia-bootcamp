@@ -148,3 +148,58 @@
         width: 95%; /* 화면 더 작을 때는 95%까지 */
     }
 }
+
+@media (max-width: 768px) {
+    #top-content {
+        height: auto;
+        padding-bottom: 180px; /* info-blur 공간 확보 */
+    }
+
+    .top-inner h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .top-inner h4 {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .text-left {
+        transform: translateX(0); /* 모바일에서는 가운데 정렬 */
+    }
+
+    .text-right {
+        transform: translateX(0);
+    }
+
+    .info-blur {
+        font-size: 13px;
+        line-height: 2;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-inner h1 {
+        font-size: 20px;
+    }
+
+    .top-inner h4 {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .info-blur {
+        font-size: 12px;
+        padding: 14px;
+    }
+}
