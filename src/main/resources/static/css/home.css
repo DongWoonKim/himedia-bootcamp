@@ -151,8 +151,7 @@
 
 @media (max-width: 768px) {
     #top-content {
-        height: auto;
-        padding-bottom: 180px; /* info-blur 공간 확보 */
+        height: 75vh;
     }
 
     .top-inner h1 {
