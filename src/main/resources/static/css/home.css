@@ -1,0 +1,150 @@
+#container {
+    height: 3500px;
+}
+
+#top-content {
+    position: relative; /* info-blur를 absolute 하려면 필수 */
+    width: 100%;
+    height: 780px;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Pretendard', sans-serif;
+}
+
+#top-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            135deg,
+            rgba(4, 178, 217, 0.15),   /* #04B2D9 - 청록 계열 */
+            rgba(4, 138, 191, 0.15),   /* #048ABF */
+            rgba(173, 197, 217, 0.1),  /* #ADC5D9 - 연한 회청 */
+            rgba(122, 159, 191, 0.1),  /* #7A9FBF */
+            rgba(242, 242, 242, 0.1)   /* #F2F2F2 - 거의 흰색 */
+    ),
+    radial-gradient(circle at 30% 30%, rgba(140, 0, 255, 0.35), transparent 70%),
+    radial-gradient(circle at 80% 60%, rgba(255, 0, 255, 0.25), transparent 70%);
+    background-blend-mode: screen;
+    z-index: 0;
+}
+
+.info-blur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    font-size: 14px;
+    line-height: 2.5;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.top-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0; /* ← 중요 */
+    margin: 0;
+    width: 100%;
+}
+
+.top-inner h4 {
+    font-size: 20px;
+    color: #DE44F2;
+}
+
+.top-inner h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.text-left {
+    transform: translateX(-20px); /* 왼쪽으로 살짝 이동 */
+}
+
+.text-right {
+    transform: translateX(52px);  /* 오른쪽으로 살짝 이동 */
+}
+
+.cta-btn {
+    background-color: #772B8C;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#target {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.post-card {
+    width: 90%;            /* 전체 폭을 90%로 */
+    max-width: 400px;       /* 최대 400px까지만 */
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.post-image {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 200px; /* 추가 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 480px) {
+    .post-card {
+        width: 95%; /* 화면 더 작을 때는 95%까지 */
+    }
+}

@@ -1,0 +1,17 @@
+/* 공통 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}

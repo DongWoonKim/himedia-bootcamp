@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HIMEDIA</title>
+  <!-- CDN으로 DOMPurify 추가 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link th:href="@{/css/common.css}" rel="stylesheet">
+  <link th:href="@{/css/main.css}" rel="stylesheet">
+  <link th:href="@{/css/home.css}" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 -->
+    <div class="header">
+      <div class="header-inner">
+        <img class="logo-img" th:src="@{/images/himedia.png}" alt="logo">
+        <span class="logo-text">하이미디어</span>
+      </div>
+    </div>
+
+    <!-- ① 콘텐츠 영역: page 변수에 따라 fragment include -->
+    <div id="content">
+      <div th:replace="~{fragments/home :: content}"></div>
+    </div>
+
+    <!-- ② 하단 네비 -->
+    <div class="bottom-nav">
+
+    </div>
+
+  </div>
+
+</body>
+</html>
