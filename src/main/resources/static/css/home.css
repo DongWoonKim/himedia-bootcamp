@@ -46,7 +46,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 2.5;
     letter-spacing: 0.4px;
     font-weight: 400;
@@ -56,13 +56,16 @@
 }
 
 .top-inner {
-    position: relative;
+    position: absolute;
+    top: 30%; /* 기존보다 더 위로 */
+    left: 50%;
+    transform: translate(-50%, -30%);
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 0; /* ← 중요 */
+    gap: 4px;
+    padding: 0;
     margin: 0;
     width: 100%;
 }
@@ -75,6 +78,7 @@
 .top-inner h1 {
     font-size: 32px;
     font-weight: 800;
+    line-height: 1.2;
 }
 
 .text-left {
@@ -168,37 +172,9 @@
         padding: 10px 20px;
     }
 
-    .text-left {
-        transform: translateX(0); /* 모바일에서는 가운데 정렬 */
-    }
-
-    .text-right {
-        transform: translateX(0);
-    }
-
     .info-blur {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 2;
         padding: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .top-inner h1 {
-        font-size: 20px;
-    }
-
-    .top-inner h4 {
-        font-size: 14px;
-    }
-
-    .cta-btn {
-        font-size: 13px;
-        padding: 8px 16px;
-    }
-
-    .info-blur {
-        font-size: 12px;
-        padding: 14px;
     }
 }
