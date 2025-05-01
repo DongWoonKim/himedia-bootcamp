@@ -184,6 +184,19 @@
     color: #212326;
 }
 
+.mid-second-description {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #772B8C;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #212326;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 480px) {
     .post-card {
         width: 95%; /* 화면 더 작을 때는 95%까지 */
