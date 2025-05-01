@@ -60,7 +60,7 @@
     flex: 1;
     overflow-y: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding-bottom: 61px; /* <-- 중요: bottom-nav 높이 + 여유 공간 */
+    /*padding-bottom: 61px; !* <-- 중요: bottom-nav 높이 + 여유 공간 *!*/
 }
 
 /********************************
@@ -81,4 +81,26 @@
     align-items: center;
     padding: 5px 0;
     z-index: 999;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 16px;
+    background-color: #772B8C;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+.scroll-to-top:hover {
+    opacity: 1;
 }
