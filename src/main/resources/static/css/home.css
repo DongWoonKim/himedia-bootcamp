@@ -198,18 +198,15 @@
 }
 
 .mid-second-description {
-    max-width: 400px;
-    width: 90%;
-    margin: 20px auto;
-    padding: 15px;
-    box-sizing: border-box;
     background-color: #ffffff;
     border-left: 5px solid #772B8C;
     border-radius: 8px;
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 1.5;
     color: #212326;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 480px) {
