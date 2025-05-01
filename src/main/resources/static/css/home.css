@@ -185,7 +185,7 @@
 }
 
 .mid-second-description {
-    max-width: 400px;
+    width: 90%;
     margin: 30px auto;
     padding: 20px;
     background-color: #ffffff;
