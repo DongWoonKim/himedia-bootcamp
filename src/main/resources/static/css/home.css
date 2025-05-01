@@ -111,16 +111,29 @@
     width: 100%;
     height: 310px;
     background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .mid-first-title {
-    padding-top: 30px;
+    font-size: 28px;
+    margin-bottom: 16px;
 }
 
 .mid-first-content {
-    padding: 30px;
-    box-sizing: border-box;
-    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    text-align: left;
+    max-width: 420px;
+    width: 100%;
 }
 
 #mid-second {
@@ -185,6 +198,7 @@
 }
 
 .mid-second-description {
+    max-width: 400px;
     width: 90%;
     margin: 30px auto;
     padding: 20px;
