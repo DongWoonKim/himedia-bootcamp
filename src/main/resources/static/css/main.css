@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*max-width: 400px;*/
     margin: 0 auto;
     height: 100%;
     position: relative;
+    background: #212326;
 }
 
 /* 헤더 영역 */
