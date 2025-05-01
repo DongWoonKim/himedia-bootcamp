@@ -45,14 +45,17 @@
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    padding: 24px 20px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.content-phrase {
     color: white;
     font-size: 15px;
     line-height: 2.5;
     letter-spacing: 0.4px;
     font-weight: 400;
-    padding: 24px 20px;
-    box-sizing: border-box;
-    border-radius: 0;
 }
 
 .top-inner {
@@ -106,6 +109,32 @@
     width: 100%;
     height: 300px;
     overflow: hidden;
+}
+
+#mid-first {
+    width: 100%;
+    height: 280px;
+    background: #000;
+}
+
+.mid-first-title {
+    padding-top: 30px;
+}
+
+.mid-first-content {
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 1.3;
+}
+
+.gradient-text-wrap {
+    text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #90e0ef, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .post-card {
