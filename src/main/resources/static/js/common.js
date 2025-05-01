@@ -10,3 +10,7 @@ $(document).ready(function () {
         }
     });
 });
+
+function scrollToTop() {
+    $('html, body').animate({ scrollTop: 0 }, 500); // 500ms 동안 부드럽게 스크롤
+}
