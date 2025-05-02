@@ -138,7 +138,7 @@
 
 #mid-second {
     width: 100%;
-    height: 900px;
+    height: 830px;
     background: #EEF3F6;
 }
 
@@ -179,10 +179,12 @@
 .post-main {
     width: 100%;
     background-color: #f9f9f9;
-    min-height: 160px; /* 추가 */
+    min-height: 140px; /* 추가 */
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .post-letter {
@@ -195,6 +197,12 @@
     padding: 15px;
     font-size: 14px;
     color: #212326;
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .mid-second-description {
