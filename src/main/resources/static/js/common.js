@@ -17,10 +17,25 @@ function scrollToTop() {
 
 function copyAddress() {
     const text = document.getElementById("address-text").textContent;
-    navigator.clipboard.writeText(text).then(() => {
-        alert("주소가 복사되었습니다!");
-    }).catch(err => {
-        alert("복사에 실패했습니다.");
-        console.error(err);
-    });
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert("주소가 복사되었습니다!");
+        }).catch(err => {
+            alert("복사 실패: " + err);
+        });
+    } else {
+        // fallback for unsupported browsers
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+            alert("주소가 복사되었습니다! (fallback)");
+        } catch (err) {
+            alert("복사 실패 (fallback): " + err);
+        }
+        document.body.removeChild(textarea);
+    }
 }
