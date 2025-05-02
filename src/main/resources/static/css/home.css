@@ -217,6 +217,36 @@
     box-sizing: border-box;
 }
 
+.mid-third-title {
+    margin-bottom: 30px;
+}
+
+.mid-third-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#mid-third {
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #27357F;
+    font-size: 13px;
+    background: #B0D6F9;
+}
+.profile-layout {
+    text-align: center;
+    display: inline-block;
+    width: calc(50% - 1%);
+}
+
+.boostshot-gradient {
+    background: linear-gradient(90deg, #6a00f4, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 @media (max-width: 480px) {
     .post-card {
         width: 95%; /* 화면 더 작을 때는 95%까지 */
