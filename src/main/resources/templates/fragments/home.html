@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
 <div id="container" th:fragment="content">
 
   <div id="top-content">
@@ -105,7 +103,7 @@
         </div>
         <div>
           <div><span class="boostshot-gradient">부스트샷</span> 멘토</div>
-          <div>현)&nbsp;<span style="color: #3C1E1E; font-weight: 800;">카카오</span>계열사 개발 팀장</div>
+          <div>현)&nbsp;<span style="color: #F2BB16; font-weight: 800;">카카오</span>계열사 개발 팀장</div>
         </div>
       </div>
 
@@ -119,9 +117,35 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
+  <div id="campus-info">
+    <div class="campus-info-title text-wrap-title">
+      <div>🗺️ 우리가 만나려면..</div>
+    </div>
+    <div id="map"></div>
+    <div class="address-box">
+      <span id="address-text">📌 서울특별시 종로구 인사동길 12 대일빌딩 7층, 15층</span>
+      <button class="copy-btn" onclick="copyAddress()">복사</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=73bf595449941dca34dcc85d0297db12"></script>
+  <script type="text/javascript">
+    kakao.maps.load(function () {
+      const container = document.getElementById('map');
+      if (!container) return;
+
+      const map = new kakao.maps.Map(container, {
+        center: new kakao.maps.LatLng(37.5739236, 126.9863976),
+        level: 3
+      });
+
+      const marker = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.5739236, 126.9863976)
+      });
+
+      marker.setMap(map);
+    });
+  </script>
+
 </div>
-</html>
