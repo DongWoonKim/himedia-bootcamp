@@ -22,7 +22,7 @@ function copyAddress() {
         navigator.clipboard.writeText(text).then(() => {
             alert("주소가 복사되었습니다!");
         }).catch(err => {
-            alert("복사 실패: " + err);
+            console.log("복사 실패: " + err);
         });
     } else {
         // fallback for unsupported browsers
@@ -32,9 +32,9 @@ function copyAddress() {
         textarea.select();
         try {
             document.execCommand('copy');
-            alert("주소가 복사되었습니다! (fallback)");
+            alert("주소가 복사되었습니다!");
         } catch (err) {
-            alert("복사 실패 (fallback): " + err);
+            console.log("복사 실패 (fallback): " + err);
         }
         document.body.removeChild(textarea);
     }
