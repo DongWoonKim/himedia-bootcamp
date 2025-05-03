@@ -9,6 +9,21 @@ $(document).ready(function () {
         }
     });
 
+    kakao.maps.load(function () {
+        const container = document.getElementById('map');
+        if (!container) return;
+
+        const map = new kakao.maps.Map(container, {
+            center: new kakao.maps.LatLng(37.5739236, 126.9863976),
+            level: 3
+        });
+
+        const marker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(37.5739236, 126.9863976)
+        });
+
+        marker.setMap(map);
+    });
 });
 
 function scrollToTop() {

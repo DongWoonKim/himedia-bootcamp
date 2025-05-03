@@ -22,16 +22,16 @@
     </div>
     <div class="mid-first-content content-phrase">
       <div>
-        <div>✅ 단순 코딩 → ❌</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;✔ <strong>진짜 문제 해결력</strong>을 키우는 <strong>현업 밀착형 프로젝트 진행</strong></div>
+        <div>• 단순 코딩 → ❌</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;✅ <strong>진짜 문제 해결력</strong>을 키우는 <strong>현업 밀착형 프로젝트 진행</strong></div>
       </div>
       <div style="padding-top:10px">
-        <div>✅ 단순 강의 → ❌</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;✔ Git, 협업 프로세스, <strong>탑티어 현업 멘토</strong> 피드백까지 <strong>실무 환경 경험</strong></div>
+        <div>• 단순 강의 → ❌</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;✅ Git, 협업 프로세스, <strong>탑티어 현업 멘토</strong> 피드백까지 <strong>실무 환경 경험</strong></div>
       </div>
       <div style="padding-top:10px">
-        <div>✅ 포트폴리오만 만든다? → ❌</div>
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;✔ <strong>"실무 바로 가능!"</strong> 수준의 <strong>완성도 높은 결과물</strong></div>
+        <div>• 포트폴리오만 만든다? → ❌</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;✅ <strong>"실무 바로 가능!"</strong> 수준의 <strong>완성도 높은 결과물</strong></div>
       </div>
     </div>
   </div>
@@ -103,7 +103,7 @@
         </div>
         <div>
           <div><span class="boostshot-gradient">부스트샷</span> 멘토</div>
-          <div>현)&nbsp;<span style="color: #F2BB16; font-weight: 800;">K사</span> 개발 팀장</div>
+          <div>현)&nbsp;<span style="color: #F2BB16; font-weight: 800;">K사</span> 시니어 개발자</div>
         </div>
       </div>
 
@@ -121,31 +121,24 @@
 
   <div id="campus-info">
     <div class="campus-info-title text-wrap-title">
-      <div>🗺️ 우리가 만나려면..</div>
+      <div>✨우리가 만나려면</div>
     </div>
     <div id="map"></div>
     <div class="address-box">
-      📌 <span id="address-text">서울특별시 종로구 인사동길 12 대일빌딩 7층, 15층</span>
+      📍<span id="address-text">서울특별시 종로구 인사동길 12 대일빌딩</span>(7층, 15층)
       <button class="copy-btn" onclick="copyAddress()">복사</button>
     </div>
   </div>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=73bf595449941dca34dcc85d0297db12"></script>
-  <script type="text/javascript">
-    kakao.maps.load(function () {
-      const container = document.getElementById('map');
-      if (!container) return;
 
-      const map = new kakao.maps.Map(container, {
-        center: new kakao.maps.LatLng(37.5739236, 126.9863976),
-        level: 3
-      });
-
-      const marker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(37.5739236, 126.9863976)
-      });
-
-      marker.setMap(map);
-    });
-  </script>
-
+  <footer class="footer-himedia">
+    <div class="footer-inner">
+      <strong>(주) 하이미디어 아카데미</strong>
+      <p>서울 종로구 인사동길 12 대일빌딩 15층</p>
+      <p>대표자 : 김한정 | 사업자등록번호 : 220-86-58115</p>
+      <p>기관명칭 : 하이미디어 아카데미</p>
+      <p>통신판매업신고 : 제2018-서울종로-0495호</p>
+      <p>기관등록번호: 제2304호</p>
+      <p class="footer-copy">copyright by Himedia Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
 </div>
