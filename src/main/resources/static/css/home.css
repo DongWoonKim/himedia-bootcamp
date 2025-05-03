@@ -506,4 +506,8 @@
     .glass-block {
         font-size: 3vw;
     }
+
+    .impact-font {
+        font-size: 3.3vw !important;
+    }
 }
