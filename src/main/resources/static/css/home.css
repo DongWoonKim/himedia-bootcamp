@@ -48,7 +48,7 @@
 
 .content-phrase {
     color: white;
-    font-size: 3vw;
+    font-size: 3.2vw;
     line-height: 2.5;
     letter-spacing: 0.4px;
     font-weight: 400;
@@ -164,7 +164,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-size: 3.3vw;
     line-height: 1.6;
     color: white;
     text-align: left;
