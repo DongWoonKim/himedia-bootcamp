@@ -14,12 +14,12 @@ $(document).ready(function () {
         if (!container) return;
 
         const map = new kakao.maps.Map(container, {
-            center: new kakao.maps.LatLng(37.5739236, 126.9863976),
+            center: new kakao.maps.LatLng(37.571930317243, 126.98706175881),
             level: 3
         });
 
         const marker = new kakao.maps.Marker({
-            position: new kakao.maps.LatLng(37.5739236, 126.9863976)
+            position: new kakao.maps.LatLng(37.571930317243, 126.98706175881)
         });
 
         marker.setMap(map);
