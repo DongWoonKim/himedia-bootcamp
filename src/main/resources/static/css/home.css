@@ -48,10 +48,11 @@
 
 .content-phrase {
     color: white;
-    font-size: 15px;
+    font-size: 3vw;
     line-height: 2.5;
     letter-spacing: 0.4px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 .top-inner {
@@ -152,6 +153,7 @@
     align-items: center;
     padding: 25px;
     box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .mid-first-title {
@@ -162,12 +164,13 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-size: 14px;
+    font-size: 2.8vw;
     line-height: 1.6;
     color: white;
     text-align: left;
     max-width: 400px;
     width: 100%;
+    white-space: nowrap;
 }
 
 #mid-second {
@@ -226,19 +229,10 @@
     list-style-type: disc;
 }
 
-/* 재사용된 glass-block */
-.glass-block {
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(28px);
-    -webkit-backdrop-filter: blur(28px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-}
-
 .text-wrap-title {
     text-align: center;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 7vw;
     line-height: 1.2;
 }
 
@@ -369,9 +363,10 @@
     z-index: 0;
 }
 
+/* 재사용된 glass-block */
 .glass-block {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 3vw;
     line-height: 1.5;
     padding: 16px 20px;
     border-radius: 12px;
