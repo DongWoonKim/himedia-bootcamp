@@ -186,6 +186,55 @@
     margin-bottom: 16px;
 }
 
+#mid-fifth {
+    background: black;
+    padding: 25px;
+}
+
+.mid-fifth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.info-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.info-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #90e0ef;
+}
+
+.info-card ul {
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.info-card li {
+    list-style-type: disc;
+}
+
+/* 재사용된 glass-block */
+.glass-block {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
 .text-wrap-title {
     text-align: center;
     font-weight: 800;
