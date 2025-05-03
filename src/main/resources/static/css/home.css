@@ -164,7 +164,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-size: 2.8vw;
+    font-size: 3vw;
     line-height: 1.6;
     color: white;
     text-align: left;
@@ -490,7 +490,7 @@
     }
 
     .info-blur {
-        font-size: 15px;
+        font-size: 3vw;
         line-height: 2;
         padding: 16px;
     }
