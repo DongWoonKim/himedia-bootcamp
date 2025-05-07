@@ -510,4 +510,8 @@
     .impact-font {
         font-size: 3.3vw !important;
     }
+
+    .text-wrap-title {
+        font-size: 7vw;
+    }
 }
