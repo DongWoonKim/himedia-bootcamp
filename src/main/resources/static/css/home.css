@@ -174,14 +174,9 @@
 #mid-second {
     width: 100%;
     background: #EEF3F6;
-    padding: 10px;
+    padding: 25px;
     box-sizing: border-box;
 }
-
-.mid-second-title {
-    padding-top: 30px;
-}
-
 
 .mid-fourth-title {
     margin-bottom: 16px;
@@ -241,6 +236,7 @@
     font-weight: 800;
     font-size: 35px;
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .gradient-text-wrap {
@@ -264,6 +260,7 @@
     padding: 15px;
     font-weight: bold;
     font-size: 16px;
+    color: #262626;
 }
 
 .post-main {
@@ -280,13 +277,13 @@
 .post-letter {
     font-size: 15px;
     line-height: 1.5;
-    color: #212326;
+    color: #262626;
 }
 
 .post-content {
     padding: 15px;
     font-size: 14px;
-    color: #212326;
+    color: #262626;
 }
 
 .vertical-stack {
@@ -308,7 +305,7 @@
 }
 
 .mid-third-title {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .mid-third-content {
@@ -513,5 +510,6 @@
 
     .text-wrap-title {
         font-size: 7vw;
+        font-weight: 700;
     }
 }
