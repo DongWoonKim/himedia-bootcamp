@@ -25,7 +25,7 @@ jobs:
           proxy_key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}      # Bastion 접근용 SSH key (.pem)
 
           script: |
-            cd /home/ubuntu/boostshot
+            cd /home/ubuntu/boostshot/himedia-bootcamp
             git pull origin master
             chmod +x deploy.sh
             ./deploy.sh
