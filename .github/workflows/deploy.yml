@@ -23,7 +23,6 @@ jobs:
           proxy_host: ${{ secrets.BASTION_HOST }}            # 퍼블릭 서브넷에 위치한 Bastion의 Public IP
           proxy_username: ${{ secrets.BASTION_USER }}        # ex: ubuntu
           proxy_key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}      # Bastion 접근용 SSH key (.pem)
-
           script: |
             cd /home/ubuntu/boostshot
             git pull origin master
