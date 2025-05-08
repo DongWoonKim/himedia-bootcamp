@@ -1,4 +1,4 @@
-name: Deploy to EC2
+name: Deploy to EC2 (via Bastion)
 
 on:
   push:
@@ -8,18 +8,24 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Deploy to EC2
+      - name: Deploy to Private EC2 via Bastion
         uses: appleboy/ssh-action@v0.1.6
         with:
-          host: ${{ secrets.BOOTCAMP_EC2_HOST }}
-          username: ${{ secrets.BOOTCAMP_EC2_USER }}
-          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+          host: ${{ secrets.PRIVATE_EC2_IP }}                # Private Subnet에 있는 EC2의 내부 IP
+          username: ${{ secrets.PRIVATE_EC2_USER }}          # ex: ubuntu
+          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}            # Private EC2 접근용 SSH key (.pem)
+
+          proxy_host: ${{ secrets.BASTION_HOST }}            # 퍼블릭 서브넷에 위치한 Bastion의 Public IP
+          proxy_username: ${{ secrets.BASTION_USER }}        # ex: ubuntu
+          proxy_key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}      # Bastion 접근용 SSH key (.pem)
+
           script: |
-            cd /home/ubuntu/himedia-bootcamp
+            cd /home/ubuntu/boostshot
             git pull origin master
             chmod +x deploy.sh
             ./deploy.sh

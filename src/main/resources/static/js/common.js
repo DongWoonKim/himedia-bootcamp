@@ -54,3 +54,10 @@ function copyAddress() {
         document.body.removeChild(textarea);
     }
 }
+
+function boostShotApply() {
+    // window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdyQfiBo6S2reFMRPx9Ze_j39CY1-wsYsd91PTWO6hfo2hCWw/viewform';
+    // 새 탭에서 열고 싶다면 아래 주석 해제
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdyQfiBo6S2reFMRPx9Ze_j39CY1-wsYsd91PTWO6hfo2hCWw/viewform', '_blank');
+
+}
