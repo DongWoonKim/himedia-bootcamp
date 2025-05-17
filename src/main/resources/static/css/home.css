@@ -428,6 +428,7 @@
 }
 
 .slider-1 {
+    max-width: 350px;
     width: 90%;
     height: 250px;
     position: relative;
