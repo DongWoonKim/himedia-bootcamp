@@ -521,9 +521,12 @@
 #map {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    flex: 1;
+    min-height: 200px; /* height 대신 min-height */
     max-width: 400px;
     height: 200px;
     margin: 0 auto;
+
 }
 
 .address-box {
