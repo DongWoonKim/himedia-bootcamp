@@ -23,6 +23,11 @@ $(document).ready(function () {
         });
 
         marker.setMap(map);
+
+        // 💡 맵이 렌더된 후 크기 재조정
+        setTimeout(() => {
+            map.relayout();
+        }, 300);
     });
 });
 
