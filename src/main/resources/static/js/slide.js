@@ -1,15 +1,13 @@
 $(document).ready(() => {
-    setInterval(function() {
-        slide(1);
-    }, 1500);
+    // 자동 슬라이드
+    setInterval(() => slide(1), 1500);
 
-    $('.slider-1 .side-btns > div:first-child').click( function () {
-        slide(-1);
-    });
+    const $prevBtn = $('.slider-1 .side-btns > div:first-child');
+    const $nextBtn = $('.slider-1 .side-btns > div:last-child');
 
-    $('.slider-1 .side-btns > div:last-child').click( function () {
-        slide(1);
-    });
+    // 클릭 또는 터치 시 슬라이드 이동
+    $prevBtn.on('click touchstart', () => slide(-1));
+    $nextBtn.on('click touchstart', () => slide(1));
 });
 
 function slide(move){
