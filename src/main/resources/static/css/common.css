@@ -12,6 +12,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-family: 'Noto Sans KR', sans-serif;
+    -webkit-touch-callout: none; /* iOS 길게 눌러도 복사메뉴 안뜨게 */
 }
 
 body {
