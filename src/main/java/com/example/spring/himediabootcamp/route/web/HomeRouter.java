@@ -11,4 +11,9 @@ public class HomeRouter {
         return "main";
     }
 
+    @GetMapping("/p")
+    public String partner() {
+        return "boostshot_p";
+    }
+
 }
