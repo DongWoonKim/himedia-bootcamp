@@ -16,9 +16,4 @@ public class HomeRouter {
         return "boostshot_p";
     }
 
-    @GetMapping("/dongwoonkim")
-    public String homework() {
-        return "index";
-    }
-
 }
